@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('type');
             $table->integer('maximum_capacity');
             $table->text('description');
+            $table->integer('stars');
         });
     }
 

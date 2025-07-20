@@ -37,3 +37,11 @@ header {
 .container {
   @apply max-w-screen-lg mx-auto px-12 py-8;
 }
+
+.card {
+  @apply bg-white rounded border border-gray-200 px-3 py-3 my-3 pb-5;
+}
+
+.btn {
+  @apply rounded px-3 py-2 bg-orange-200 hover:bg-orange-400 hover:text-white hover:cursor-pointer;
+}
