@@ -8,8 +8,8 @@
     <h1>Welcome to the Gastro Time</h1>
     <p>Click the button to view the list of restaurants.</p>
 
-    <a href="{{ route('restaurants.index') }}" class="btn mt-4 inline-block">
-        Find Restaurants!
+    <a href="{{ route('restaurants.index') }}">
+        Find ours Partners Restaurants!
     </a>
 </body>
 </html>
