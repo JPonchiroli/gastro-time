@@ -10,6 +10,10 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+* {
+    @apply text-amber-950
+}
+
 body {
     @apply bg-orange-50
 }
@@ -26,7 +30,7 @@ header {
   }
 
   a {
-    @apply text-amber-950 hover:border-b-2 hover:border-orange-400 
+    @apply hover:border-b-2 hover:border-orange-400 
   }
 }
 
