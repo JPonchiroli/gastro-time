@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Restaurant;
+use App\Models\Review;
 use Illuminate\Http\Request;
 
 class RestaurantController extends Controller
@@ -19,6 +20,12 @@ class RestaurantController extends Controller
 
     public function reservation() {
         return view('restaurants.reservation');
+    }
+
+    public function details(Restaurant $restaurant) {
+        $reviews = $restaurant->reviews;
+
+        return view('restaurants.details', compact('restaurant', 'reviews'));
     }
 }
 
