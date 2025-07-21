@@ -13,6 +13,10 @@ class Restaurant extends Model
     /** @use HasFactory<\Database\Factories\RestaurantFactory> */
     use HasFactory;
 
+    public function reviews() {
+        return $this->hasMany(Review::class);
+    }
+
     public const TYPES = [
         'Italian',
         'Japanese',

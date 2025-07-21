@@ -23,7 +23,6 @@ class RestaurantFactory extends Factory
             'type'              => fake()->randomElement(Restaurant::TYPES), 
             'maximum_capacity'  => fake()->numberBetween(1, 12), 
             'description'       => fake()->paragraph(10),
-            'stars'             => fake()->numberBetween(1, 5)
         ];
     }
 }

@@ -34,6 +34,14 @@ header {
   }
 }
 
+h2 {
+  @apply text-3xl mb-3
+}
+
+h3 {
+  @apply text-2xl
+}
+
 .container {
   @apply max-w-screen-lg mx-auto px-12 py-8;
 }
@@ -44,4 +52,16 @@ header {
 
 .btn {
   @apply rounded px-3 py-2 bg-orange-200 hover:bg-orange-400 hover:text-white hover:cursor-pointer;
+}
+
+.details {
+  @apply bg-orange-200 p-4 rounded mb-3
+}
+
+.details > p {
+  @apply mb-1
+}
+
+.reviews {
+  @apply bg-orange-100 rounded p-2
 }
