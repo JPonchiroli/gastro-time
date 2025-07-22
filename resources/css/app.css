@@ -42,6 +42,10 @@ h3 {
   @apply text-2xl
 }
 
+h4 {
+  @apply text-lg
+}
+
 .container {
   @apply max-w-screen-lg mx-auto px-12 py-8;
 }
