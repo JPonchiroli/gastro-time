@@ -9,10 +9,16 @@
   </div>
 
   <div class="reviews">
+
     <h3>Reviews</h3>
 
     @foreach($reviews as $review)
     <div class="card ">
+
+      @if($review == '' || $review == null)
+      <h1>The restaurant has no reviews yet.</h1>
+      @endif
+
       <div class="flex justify-between">
         <div class="flex">
           <h4>{{ $review->author }}</h4>
@@ -23,8 +29,10 @@
         </div>
 
         <h4>{{ date('d/m/Y', strtotime($review->review_date)); }}</h4>
+
       </div>
       <span>{{ $review->comment }}</span>
+      
     </div>
     @endforeach
 
